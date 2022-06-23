@@ -17,7 +17,7 @@ This project conducted a thorough study of the subject area, designing the struc
 
 ##### Посилання на курсові роботи:
 - Перша курсова робота (БД): <br>https://drive.google.com/file/d/170ZyjZSD3p5zHlv-ocgl6Mxjue1Pg-az/view?usp=sharing
-- Друга курсова робота (ООП): <br>https://drive.google.com/file/d/12zt3ulEr_zYXwwm0cQga8pXR1Cpj6F6w/view?usp=sharing
+- Друга курсова робота (ООП): <br>https://drive.google.com/file/d/1PEsy3vWptwHmBVTd9PJuzhRaBZTOTp-_/view?usp=sharing
 <br>
 
 ## Some diagrams:
