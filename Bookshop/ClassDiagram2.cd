@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bookshop.Classes.Admin" Collapsed="true">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAAAAAAIAAAAAAAJAAAAQAEFCAgAAACAAABAAA=</HashCode>
+      <FileName>Classes\Admin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Bookshop.Classes.Author" Collapsed="true">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Classes\Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Book" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <AssociationLine Name="author" Type="Bookshop.Classes.Author" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="2.563" />
+        <Point X="4.312" Y="2.563" />
+        <Point X="4.312" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQCgAAAAAAAAAAIgCAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Book.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="genre" />
+      <Property Name="author" />
+      <Property Name="publisher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.Classes.BookOrder" Collapsed="true">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="book" Type="Bookshop.Classes.Book" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="1.312" />
+        <Point X="7.5" Y="1.875" />
+        <Point X="6.062" Y="1.875" />
+        <Point X="6.062" Y="2.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.482" Y="0.385" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\BookOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="book" />
+      <Property Name="order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.Classes.Customer" Collapsed="true">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAIAACAAAABAAgAAAAAAAAAAIBAEAgEAAQAAAABIA=</HashCode>
+      <FileName>Classes\Customer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Bookshop.Classes.Genre" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Classes\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Order" Collapsed="true">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="customer" Type="Bookshop.Classes.Customer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="1.062" />
+        <Point X="3.121" Y="1.062" />
+        <Point X="3.121" Y="4.125" />
+        <Point X="2.5" Y="4.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.19" Y="0.544" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.Classes.Publisher" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Classes\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.User" Collapsed="true">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAgAAAAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

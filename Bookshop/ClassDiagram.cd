@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Bookshop.Classes.User">
+    <Position X="0.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAgAAAAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Admin">
+    <Position X="3" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAAAAAAIAAAAAAAJAAAAQAEFCAgAAACAAABAAA=</HashCode>
+      <FileName>Classes\Admin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Bookshop.Classes.Author">
+    <Position X="5.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Classes\Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Book">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="genre" Type="Bookshop.Classes.Genre" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="4.75" />
+        <Point X="7.375" Y="4.75" />
+        <Point X="7.375" Y="4.75" />
+        <Point X="8" Y="4.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.137" Y="0.033" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="author" Type="Bookshop.Classes.Author" FixedFromPoint="true">
+      <Path>
+        <Point X="6.062" Y="3.75" />
+        <Point X="6.062" Y="2.747" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.081" Y="0.146" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="publisher" Type="Bookshop.Classes.Publisher" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="3.75" />
+        <Point X="6.5" Y="3.375" />
+        <Point X="8.667" Y="3.375" />
+        <Point X="8.667" Y="2.997" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.167" Y="0.117" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQCgAAAAAAAAAAIgCAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Book.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="genre" />
+      <Property Name="author" />
+      <Property Name="publisher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.Classes.Customer">
+    <Position X="0.5" Y="4" Width="2" />
+    <InheritanceLine Type="Bookshop.Classes.User" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.375" Y="3.132" />
+        <Point X="1.375" Y="3.625" />
+        <Point X="1.75" Y="3.625" />
+        <Point X="1.75" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAIAACAAAABAAgAAAAAAAAAAIBAEAgEAAQAAAABIA=</HashCode>
+      <FileName>Classes\Customer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Bookshop.Classes.Genre">
+    <Position X="8" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Classes\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Publisher">
+    <Position X="7.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Classes\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.Classes.Order">
+    <Position X="3" Y="6.75" Width="1.75" />
+    <AssociationLine Name="customer" Type="Bookshop.Classes.Customer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.802" Y="6.75" />
+        <Point X="3.802" Y="6.062" />
+        <Point X="2.5" Y="6.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.254" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.Classes.BookOrder">
+    <Position X="6" Y="7" Width="1.75" />
+    <AssociationLine Name="book" Type="Bookshop.Classes.Book" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.875" Y="7" />
+        <Point X="6.875" Y="6.625" />
+        <Point X="6.25" Y="6.625" />
+        <Point X="6.25" Y="6.074" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.762" Y="0.3" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="order" Type="Bookshop.Classes.Order">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\BookOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="book" />
+      <Property Name="order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Bookshop.DB">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAABABAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bookshop.dgvControl">
+    <Position X="11" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAEABAAAA=</HashCode>
+      <FileName>dgvControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
